@@ -1,18 +1,15 @@
-let num;
+let num = '0';
 let score;
 
-const question1 = {
- 	question1: 'вопрос1'
- }
+const questions = [
+	{ 'question1', answer1: 'a', correctAnswer: 'b', answer3: 'c' }, 
+	{ 'question2', answer1: 'a', answer2: 'b', correctAnswer: 'c' },
+	{ 'question3', correctAnswer: 'a', answer2: 'b', answer3: 'c' },
+	{ 'question4', answer1: 'a', answer2: 'b', correctAnswer: 'c' },
+] 
 
-const question2 = {
- 	question1: 'вопрос2'
- }
+const result = questions.filter((item) => {
+  return item.correctAnswer === 'c';
+})
 
- const question3 = {
- 	question1: 'вопрос3'
- }
-
- const question4 = {
- 	question1: 'вопрос4'
- }
+console.log(result);
