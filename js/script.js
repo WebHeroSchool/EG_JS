@@ -8,12 +8,6 @@ const q = [
 	{ question: 'question4', answer1: 'a', answer2: 'b', correctAnswer: 'c' },
 ] 
 
-function bildQuiz(q){
-	for(let i = 0;i < q.length;i++) {
-		if (i = 'b') {
-			console.log (q[i]);
-		}
-	}
-}
-
-bildQuiz(q)
+const result = q.map((item) => item.correctAnswer) 
+	
+console.log(result);
