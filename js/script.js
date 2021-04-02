@@ -1,18 +1,25 @@
-let num;
-let score;
 
-const question1 = {
- 	question1: 'вопрос1'
- }
+let question1 = 'Сколько дней в году?'; 
+let correctAnswer1 = '365';
+let question2 = 'Сколько месяцев в году?';
+let correctAnswer2 = '12';
+let question3 = 'Сколько дней в апреле месяце?';
+let correctAnswer3 = '30';
+let	question4 = 'Сколько  часов в сутках?';
+let correctAnswer4 = '24'; 
 
-const question2 = {
- 	question1: 'вопрос2'
- }
+let correctResult = 4;
+function userAnswer(question, correctAnswer)
+{
+    let answer = prompt(question);
+    let count = 0;
+    if (answer.toLowerCase() == correctAnswer)
+    {
+        correctResult++;
+    }
+}
 
- const question3 = {
- 	question1: 'вопрос3'
- }
-
- const question4 = {
- 	question1: 'вопрос4'
- }
+userAnswer(question1, correctAnswer1[365]);
+userAnswer(question2, correctAnswer2[12]);
+userAnswer(question3, correctAnswer3[30]);
+userAnswer(question4, correctAnswer4[24]);
